@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Tutoring Calculator";
+}
+
+<div class="container">
+    <main role="main" class="pb-3">
+        <h1 class="text-center mb-4">Surfing Tutoring Calculator</h1>
+
+        <p class="lead">
+            Use this calculator to estimate the cost of your surfing tutoring session. Enter the number of hours you need, and we’ll calculate the total price based on my hourly rate.
+        </p>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="mb-3">
+                    <!-- Input for the number of hours -->
+                    <label for="hoursInput" class="form-label">Enter the number of hours:</label>
+                    <input type="number" class="form-control" id="hoursInput" placeholder="Number of hours" min="1">
+                </div>
+
+                <div class="mb-3">
+                    <!-- Non-editable box for hourly rate -->
+                    <label for="hourlyRate" class="form-label">Hourly Rate:</label>
+                    <input type="text" class="form-control" id="hourlyRate" value="$50" readonly>
+                </div>
+
+                <button id="calculateButton" class="btn btn-primary">Calculate Total</button>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <!-- Output for the total -->
+            <label for="totalOutput" class="form-label">Total Cost:</label>
+            <input type="text" class="form-control" id="totalOutput" readonly>
+        </div>
+    </main>
+</div>
